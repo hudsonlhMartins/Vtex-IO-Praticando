@@ -1,0 +1,86 @@
+{
+    "flex-layout.row#line01":{
+        "children":[
+            "flex-layout.col#col01-desktop",             
+            "flex-layout.col#col02-desktop"
+        ],
+        "props":{
+            "blockClass": ["centralizer", "line01-praticando"]
+        }
+    },
+    
+
+    "flex-layout.col#col01-desktop":{
+        "children":[
+            "list-context.image-list#banner-praticando"
+        ],
+        "props":{
+            "blockClass": ["col01-praticando"]
+        }
+    },
+
+    "list-context.image-list#banner-praticando":{
+        "children": ["slider-layout#praticando-images"],
+        "props": {
+          "preload": true,
+          "height": 650,
+          "images": [
+            {
+              "image": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+              "description": "something something"
+            },
+            {
+              "image": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+              "description": "something something"
+            }
+          ]
+        }
+    
+    },
+    "slider-layout#praticando-images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true
+        }
+      },
+
+    
+
+    "flex-layout.col#col02-desktop":{
+        "children":[
+            "rich-text#line01",
+            "flex-layout.row#lineRigth-desktop"
+        ], "props":{
+            "blockClass": ["col02-praticando"]
+        }
+    },
+
+    "rich-text#line01":{
+        "props":{
+            "text": "# Hudson Martins",
+            "textPosition": "CENTER"
+            //"textAlign": "CENTER"
+        }
+    },
+    "flex-layout.row#lineRigth-desktop":{
+        "children":[
+            "rich-text#line01-right"
+        ],
+        "props":{
+            "blockClass": ["lineRigth-praticando"]
+        }
+    },
+    "rich-text#line01-right":{
+        "props":{
+            "text": "Desenvolvedor Front-End, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat porta massa id dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed et neque consequat, facilisis dolor quis, accumsan augue. Cras eu metus a ex maximus suscipit. Vestibulum sit amet augue pulvinar, pulvinar eros sed, malesuada nibh. Pellentesque odio enim, facilisis non iaculis a, blandit nec tortor. Aliquam non augue at massa ultricies volutpat."
+            //"textPosition": "CENTER"
+            //"textAlign": "CENTER"
+        }
+    }
+    
+
+}

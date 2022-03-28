@@ -1,0 +1,56 @@
+{
+    "flex-layout.row#line02": {
+        "children": [
+           "list-context.product-list#shelf-praticando"
+        ],
+        "props": {
+            "blockClass": ["centralizer", "line02-praticando"]
+        }
+    },
+
+    "list-context.product-list#shelf-praticando":{
+        "blocks":["product-summary.shelf#summary-praticando"],
+        "children":[
+            "slider-layout#slider-praticando"
+        ]
+    },
+    "slider-layout#slider-praticando":{
+        "props": {
+            "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 1,
+              "phone": 2
+            },
+
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "mobileOnly",
+        "blockClass": "shelf-carousel"
+        }
+        
+    },
+
+
+    "product-summary.shelf#summary-praticando":{
+        "children":[
+            "product-summary-image",
+            "product-summary-name",
+            "product-summary-space", // isso aqui e para da um espaço entre o nome e o preço
+            "product-summary-price",
+            "product-summary-buy-button"
+        ]
+    },
+
+    "product-summary-buy-button":{
+        "props":{
+            "buyButtonText": "Comprar"
+        }
+    },
+    "product-summary-image": {
+        "props": {
+          "showBadge": true,
+          "height": 220,
+          "aspectRatio": "1:1"
+        }
+      }
+}

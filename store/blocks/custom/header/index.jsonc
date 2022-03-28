@@ -1,0 +1,30 @@
+{
+    "header#praticando": {
+        "blocks": ["header-layout.desktop#praticando", "header-layout.mobile#praticando"]
+      },
+      "header.full#praticando": {
+        "blocks": ["header-layout.desktop#praticando", "header-layout.mobile#praticando"]
+      },
+
+      "header-layout.desktop#praticando":{
+          "children":[
+            "sticky-layout#desktop-header-praticando"
+          ]
+      },
+
+      "header-layout.mobile#praticando":{
+        "children":[
+            "sticky-layout#mobile-header-praticando"
+        ]
+    },
+
+      "logo#praticando":{
+        "props": {
+            "width": 132,
+            "height": 132,
+            "mobileWidth": 90,
+            "mobileHeight": 32,
+            "url": "https://partnernetwork.vtexassets.com/arquivos/ids/155515/logo_eshop.png?v=637587596324430000"
+          }
+      }
+}

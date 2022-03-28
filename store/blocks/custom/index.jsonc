@@ -1,0 +1,13 @@
+{
+   "store.custom#praticando":{
+       "parent":{
+        "header": "header#praticando"
+       },
+       "blocks":[
+           "flex-layout.row#line01",
+           "flex-layout.row#line02"
+       ]
+   }
+
+
+}

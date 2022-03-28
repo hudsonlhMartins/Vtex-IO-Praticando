@@ -1,0 +1,73 @@
+{
+    "flex-layout.row#header-line01-praticando":{
+        "children":[
+            "flex-layout.col#header-col01-praticando",
+            "flex-layout.col#header-col02-praticando",
+            //"flex-layout.col#spacer", // aqui para da espaçamento entre as colunas
+            "flex-layout.col#header-col003-praticando"
+
+        ],
+        "props":{
+            "blockClass": ["centralizer", "header-praticando"],
+            // essa prop para que cada coluna ocupe seu propio espaço
+            "preventHorizontalStretch": true
+        }
+    },
+    "flex-layout.col#header-col01-praticando":{
+        "children":[
+            "logo#praticando"
+        ],
+        "props":{
+            "blockClass": ["col01-praticando"]
+          
+        }
+    },
+    "flex-layout.col#header-col02-praticando":{
+        "children":[
+            "search-bar#header-praticando"
+        ],
+        "props":{
+            "blockClass": ["col02-praticando"],
+            "width": "grow"
+            
+        }
+    },
+
+    "flex-layout.col#header-col003-praticando":{
+        "children":[
+            "flex-layout.row#header-icons-praticando"
+        ],
+        "props":{
+            "blockClass": ["col03-praticando"],
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.row#header-icons-praticando":{
+        "children":[
+            "flex-layout.col#header-login-praticando",
+            "flex-layout.col#header-minicard-praticando"
+
+        ]
+      
+    },
+
+    "flex-layout.col#header-login-praticando":{
+        "children":[
+            "login#praticando"
+        ],
+        "props":{
+            "blockClass": ["login-praticando"]
+        }
+    },
+
+    "flex-layout.col#header-minicard-praticando":{
+        "children":[
+            "minicart.v2"
+        ],
+        "props":{
+            "blockClass": ["minicard-praticando"]
+        }
+    }
+    
+    
+}

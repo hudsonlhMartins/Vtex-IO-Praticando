@@ -1,0 +1,7 @@
+{
+    "sticky-layout#mobile-header-praticando":{
+        "children":[
+            "logo#praticando"
+        ]
+    }
+}

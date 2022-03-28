@@ -1,0 +1,35 @@
+{
+    "sticky-layout#desktop-header-praticando":{
+        "children":[
+            "flex-layout.row#header-line01-praticando"
+        ]
+    },
+
+    // general app
+    "search-bar#header-praticando": {
+        "blocks": ["autocomplete-result-list.v2"],
+        "props": {
+          "openAutocompleteOnFocus": true
+        }
+    },
+    "autocomplete-result-list.v2":{
+        "blocks":["product-summary.shelf#summary-praticando"],
+        "props":{
+            "maxSuggestedProducts": 4,
+            "autocompleteWidth": 80
+        }
+    },
+
+    // Login
+    "login#praticando": {
+        "props": {
+          "emailAndPasswordTitle": "LOG-IN",
+          "accessCodeTitle": "Acess Code LOG-IN",
+          "emailPlaceholder": "e-mail",
+          "passwordPlaceholder": "password",
+          "showPasswordVerificationIntoTooltip": true
+        }
+      }
+
+}
+// "logo#praticando"
